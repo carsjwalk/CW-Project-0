@@ -2,6 +2,7 @@ library(ggplot2)
 library(dplyr)
 library(ggrepel)
 library(patchwork)
+
 manual <- mtcars %>% 
   filter(between(disp, 100, 1000)) %>% 
   group_by(am) %>% 
